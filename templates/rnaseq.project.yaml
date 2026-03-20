@@ -1,0 +1,29 @@
+workflow: rnaseq
+cores: 4
+snakemake_cmd: "conda run -n snakemake snakemake"
+
+COUNTS_FILE: /absolute/path/to/salmon.merged.gene_counts.tsv
+TPM_FILE: /absolute/path/to/salmon.merged.gene_tpm.tsv
+METADATA_FILE: /absolute/path/to/metadata.txt
+OUTPUT_DIR: /home/yangzichen/projects/rnaseq/project_name_here/results
+UPSTREAM_MANIFEST: null
+UPSTREAM_PIPELINE_NAME: nf-core/rnaseq
+UPSTREAM_PIPELINE_VERSION: "3.18.0"
+REFERENCE_GENOME: GRCm39
+ANNOTATION_RELEASE: Ensembl 110
+QUANTIFICATION_METHOD: Salmon gene-level summarization
+
+DESIGN_FACTOR: group
+REFERENCE_LEVEL: M0
+REFERENCE_LEVELS:
+  group: M0
+CONTINUOUS_FACTORS: []
+CONTRASTS_FILE: null
+
+CONTRASTS:
+  - [M1, M0]
+
+QC_TRANSFORM: vst
+RUN_GSEA: true
+RUN_MOTIF: false
+N_CPUS: 4
