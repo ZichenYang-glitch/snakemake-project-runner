@@ -1,5 +1,7 @@
 # Snakemake Project Runner
 
+> **Archived.** This repository is a thin Snakemake launcher with hardcoded local paths and is no longer maintained. For durable pipeline runs and adapters, use [HelixWeave](https://github.com/ZichenYang-glitch/ENCODE-style-ChIPseq-CUT-Tag-pipeline).
+
 `run_workflow.py` is a thin launcher for project-oriented Snakemake runs.
 
 It expects each project directory to contain a YAML config with:
